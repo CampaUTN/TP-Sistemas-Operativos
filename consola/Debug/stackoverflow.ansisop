@@ -1,0 +1,22 @@
+#!./consola
+#Overflow en el numero 3*4 + 5 % 300 = 16
+begin
+	variables r
+	r <- f 0
+end
+
+function f
+	variables a, r
+	a=$0+1
+	print a
+	r <- g a
+end
+
+function g
+	variables a, r
+	a=$0+1
+	print a
+	r <- f a
+end
+
+
